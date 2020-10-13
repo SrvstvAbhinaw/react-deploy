@@ -22,7 +22,7 @@ class App extends Component{
         <a className="navbar-brand" href="https://codingthesmartway.com">
         <img src={logo} width="30" height="30" alt="codingthesmartway"/>
         </a>
-        <Link to="/" className="navbar-brand">MERN Stack TODO App</Link>
+        <Link to="/" className="navbar-brand">MERN Stack Demo</Link>
         
         <div>
         <ul className="navbar-nav mr-auto">
