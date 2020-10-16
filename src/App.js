@@ -11,13 +11,16 @@ import EditTodo from "./components/edit-todo.commponent";
 import TodoList from "./components/todos-list.component";
 
 import logo from './logo.png';
+import Header from './components/header';
+import Footer from './components/footer';
 
 class App extends Component{
   render (){
     return (
       <Router>
+        <Header></Header>
+
         <div className="container">
-        
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="https://codingthesmartway.com">
         <img src={logo} width="30" height="30" alt="codingthesmartway"/>
@@ -42,6 +45,7 @@ class App extends Component{
         <Route path="/edit/:id"  component={EditTodo}/>
         <Route path="/create"  component={CreateTodo}/>
         </div>
+        <Footer></Footer>
         
       </Router>
     );
